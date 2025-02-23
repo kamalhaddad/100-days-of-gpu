@@ -8,7 +8,7 @@ __global__ void vecAdd(const float* A, const float* B, float* C, int N) {
         C[idx] = A[idx] + B[idx];
     }
     
-    // printf("Index %d: A = %.2f, B = %.2f, C = %.2f\n", idx, A[idx], B[idx], C[idx]);
+    // printf("Index %d: A = %.2f, B = %.nm2f, C = %.2f\n", idx, A[idx], B[idx], C[idx]);
 }
 
 int main() {
