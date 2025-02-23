@@ -1,5 +1,0 @@
-/home/kamalh/gpu_mode/100-days-of-gpu/build/CMakeFiles/edit_cache.dir
-/home/kamalh/gpu_mode/100-days-of-gpu/build/CMakeFiles/rebuild_cache.dir
-/home/kamalh/gpu_mode/100-days-of-gpu/build/day01/CMakeFiles/day01.dir
-/home/kamalh/gpu_mode/100-days-of-gpu/build/day01/CMakeFiles/edit_cache.dir
-/home/kamalh/gpu_mode/100-days-of-gpu/build/day01/CMakeFiles/rebuild_cache.dir
