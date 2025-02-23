@@ -6,9 +6,9 @@ __global__ void vecAdd(const float* A, const float* B, float* C, int N) {
     int idx = blockDim.x * blockIdx.x + threadIdx.x;
     if(idx < N) {
         C[idx] = A[idx] + B[idx];
+        printf("Index %d: A = %.2f, B = %.2f, C = %.2f\n", idx, A[idx], B[idx], C[idx]);
     }
     
-    // printf("Index %d: A = %.2f, B = %.nm2f, C = %.2f\n", idx, A[idx], B[idx], C[idx]);
 }
 
 int main() {
@@ -39,8 +39,8 @@ int main() {
         cudaMemcpy(d_A, A, N*sizeof(float), cudaMemcpyHostToDevice);
         cudaMemcpy(d_B, B, N*sizeof(float), cudaMemcpyHostToDevice);
 
-        const int numberOfBlocks = 1;
-        const int numberOfThreadsPerBlock = N;
+        const int numberOfThreadsPerBlock = N/4;
+        const int numberOfBlocks = ceil(N/numberOfThreadsPerBlock);
         
         vecAdd<<<numberOfBlocks, numberOfThreadsPerBlock>>>(d_A, d_B, d_C, N);
 
