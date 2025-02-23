@@ -6,12 +6,12 @@ set(CMAKE_CUDA_STANDARD 17)
 set(CMAKE_CUDA_STANDARD_REQUIRED ON)
 
 # Specify the executable and source files
-add_executable(day01 main.cu)
+add_executable(day01 vecAdd.cu)
 
 # Set CUDA architecture (modify based on your GPU, e.g., sm_75 for RTX 2080)
 set_target_properties(day01 PROPERTIES 
     CUDA_SEPARABLE_COMPILATION ON
-    CUDA_ARCHITECTURES 75)
+    CUDA_ARCHITECTURES 80)
 
 # Link CUDA libraries (if needed)
 target_link_libraries(day01 PRIVATE CUDA::cuda_driver)

@@ -69,28 +69,28 @@ include day01/CMakeFiles/day01.dir/progress.make
 # Include the compile flags for this target's objects.
 include day01/CMakeFiles/day01.dir/flags.make
 
-day01/CMakeFiles/day01.dir/main.cu.o: day01/CMakeFiles/day01.dir/flags.make
-day01/CMakeFiles/day01.dir/main.cu.o: ../day01/main.cu
-day01/CMakeFiles/day01.dir/main.cu.o: day01/CMakeFiles/day01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamalh/gpu_mode/100-days-of-gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object day01/CMakeFiles/day01.dir/main.cu.o"
-	cd /home/kamalh/gpu_mode/100-days-of-gpu/build/day01 && /usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT day01/CMakeFiles/day01.dir/main.cu.o -MF CMakeFiles/day01.dir/main.cu.o.d -x cu -dc /home/kamalh/gpu_mode/100-days-of-gpu/day01/main.cu -o CMakeFiles/day01.dir/main.cu.o
+day01/CMakeFiles/day01.dir/vecAdd.cu.o: day01/CMakeFiles/day01.dir/flags.make
+day01/CMakeFiles/day01.dir/vecAdd.cu.o: ../day01/vecAdd.cu
+day01/CMakeFiles/day01.dir/vecAdd.cu.o: day01/CMakeFiles/day01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamalh/gpu_mode/100-days-of-gpu/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object day01/CMakeFiles/day01.dir/vecAdd.cu.o"
+	cd /home/kamalh/gpu_mode/100-days-of-gpu/build/day01 && /usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT day01/CMakeFiles/day01.dir/vecAdd.cu.o -MF CMakeFiles/day01.dir/vecAdd.cu.o.d -x cu -dc /home/kamalh/gpu_mode/100-days-of-gpu/day01/vecAdd.cu -o CMakeFiles/day01.dir/vecAdd.cu.o
 
-day01/CMakeFiles/day01.dir/main.cu.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/day01.dir/main.cu.i"
+day01/CMakeFiles/day01.dir/vecAdd.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/day01.dir/vecAdd.cu.i"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-day01/CMakeFiles/day01.dir/main.cu.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/day01.dir/main.cu.s"
+day01/CMakeFiles/day01.dir/vecAdd.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/day01.dir/vecAdd.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
 # Object files for target day01
 day01_OBJECTS = \
-"CMakeFiles/day01.dir/main.cu.o"
+"CMakeFiles/day01.dir/vecAdd.cu.o"
 
 # External object files for target day01
 day01_EXTERNAL_OBJECTS =
 
-day01/CMakeFiles/day01.dir/cmake_device_link.o: day01/CMakeFiles/day01.dir/main.cu.o
+day01/CMakeFiles/day01.dir/cmake_device_link.o: day01/CMakeFiles/day01.dir/vecAdd.cu.o
 day01/CMakeFiles/day01.dir/cmake_device_link.o: day01/CMakeFiles/day01.dir/build.make
 day01/CMakeFiles/day01.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libcuda.so
 day01/CMakeFiles/day01.dir/cmake_device_link.o: day01/CMakeFiles/day01.dir/dlink.txt
@@ -103,12 +103,12 @@ day01/CMakeFiles/day01.dir/build: day01/CMakeFiles/day01.dir/cmake_device_link.o
 
 # Object files for target day01
 day01_OBJECTS = \
-"CMakeFiles/day01.dir/main.cu.o"
+"CMakeFiles/day01.dir/vecAdd.cu.o"
 
 # External object files for target day01
 day01_EXTERNAL_OBJECTS =
 
-day01/day01: day01/CMakeFiles/day01.dir/main.cu.o
+day01/day01: day01/CMakeFiles/day01.dir/vecAdd.cu.o
 day01/day01: day01/CMakeFiles/day01.dir/build.make
 day01/day01: /usr/lib/x86_64-linux-gnu/libcuda.so
 day01/day01: day01/CMakeFiles/day01.dir/cmake_device_link.o

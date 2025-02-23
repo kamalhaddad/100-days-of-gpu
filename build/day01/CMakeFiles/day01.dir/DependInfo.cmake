@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kamalh/gpu_mode/100-days-of-gpu/day01/main.cu" "day01/CMakeFiles/day01.dir/main.cu.o" "gcc" "day01/CMakeFiles/day01.dir/main.cu.o.d"
+  "/home/kamalh/gpu_mode/100-days-of-gpu/day01/vecAdd.cu" "day01/CMakeFiles/day01.dir/vecAdd.cu.o" "gcc" "day01/CMakeFiles/day01.dir/vecAdd.cu.o.d"
   )
 
 # Targets to which this target links.

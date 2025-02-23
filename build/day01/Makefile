@@ -130,29 +130,29 @@ day01/fast:
 	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/build
 .PHONY : day01/fast
 
-main.o: main.cu.o
-.PHONY : main.o
+vecAdd.o: vecAdd.cu.o
+.PHONY : vecAdd.o
 
 # target to build an object file
-main.cu.o:
-	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/main.cu.o
-.PHONY : main.cu.o
+vecAdd.cu.o:
+	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/vecAdd.cu.o
+.PHONY : vecAdd.cu.o
 
-main.i: main.cu.i
-.PHONY : main.i
+vecAdd.i: vecAdd.cu.i
+.PHONY : vecAdd.i
 
 # target to preprocess a source file
-main.cu.i:
-	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/main.cu.i
-.PHONY : main.cu.i
+vecAdd.cu.i:
+	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/vecAdd.cu.i
+.PHONY : vecAdd.cu.i
 
-main.s: main.cu.s
-.PHONY : main.s
+vecAdd.s: vecAdd.cu.s
+.PHONY : vecAdd.s
 
 # target to generate assembly for a file
-main.cu.s:
-	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/main.cu.s
-.PHONY : main.cu.s
+vecAdd.cu.s:
+	cd /home/kamalh/gpu_mode/100-days-of-gpu/build && $(MAKE) $(MAKESILENT) -f day01/CMakeFiles/day01.dir/build.make day01/CMakeFiles/day01.dir/vecAdd.cu.s
+.PHONY : vecAdd.cu.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... day01"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... vecAdd.o"
+	@echo "... vecAdd.i"
+	@echo "... vecAdd.s"
 .PHONY : help
 
 
