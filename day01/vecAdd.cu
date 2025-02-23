@@ -43,7 +43,7 @@ int main() {
         const int numberOfBlocks = ceil(N/numberOfThreadsPerBlock);
         
         vecAdd<<<numberOfBlocks, numberOfThreadsPerBlock>>>(d_A, d_B, d_C, N);
-
+        cudaDeviceSynchronize();
         
         cudaMemcpy(C,d_C, N*sizeof(float),cudaMemcpyDeviceToHost);
         cudaFree(d_A);
